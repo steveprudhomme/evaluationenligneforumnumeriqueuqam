@@ -1,0 +1,181 @@
+% Auteur : Steve Prud’Homme
+% Cette oeuvre, création, site ou texte est sous licence Creative Commons Attribution - Pas d’Utilisation Commerciale - Partage dans les Mêmes Conditions 4.0 International. Pour accéder à une copie de cette licence, merci de vous rendre à l'adresse suivante 
+% http://creativecommons.org/licenses/by-nc-sa/4.0/ ou envoyez un courrier à 
+% Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.
+\documentclass[aspectratio=169]{beamer}
+%\usepackage{beamerthemesplit} % new 
+\usepackage[french]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{tikz}
+\usepackage[fixlanguage]{babelbib}
+\selectbiblanguage{french}
+% Natlib pour la bibliographie
+\usepackage{natbib}
+% Pour les hyperliens
+\usepackage{url}
+% pour les illustration
+\usetikzlibrary{mindmap,shadows,shapes,backgrounds}
+\usepackage[T1]{fontenc}
+\setbeamertemplate{bibliography item}[text]
+% Pour l'utilisation de colonnes multiples
+\usepackage{multicol}
+
+\begin{document}
+	\title{L'évaluation en ligne : pour Alain Stockless} 
+	\author{Steve Prud'Homme} 
+	\institute{UQÀM - GTN-Québec - Commission scolaire de Laval} 
+	\date{\today} 
+
+	
+	\frame{\titlepage} 
+	
+	\section{Contexte} 
+		\begin{frame}[allowframebreaks]
+			\frametitle{Le contexte de la formation à distance et en ligne}
+			Le \citet{OLC2015a}, conclut dans une grande étude Étatsunienne qu'en 2015\footnote{Infographie : \url {http://www.onlinelearningsurvey.com/reports/2015SurveyInfo.pdf} } :
+			\begin {itemize}
+				\item Hausse d'inscriptions en formation à distance de 3,9 \% par rapport à 2014
+				\item Plus du quart des étudiants (28 \%) prend des cours en formation à distance (un  total de 5 828 826 édutiants, une hausse annuelle de 217,275  pour une population de 321 773 631 [soit 1,8  \%])
+				\item Le pourcentage de directeurs universitaires qui considèrent les résultats de l'apprentissage dans l'éducation en ligne comme étant égal ou supérieur à ceux de l'enseignement en face à face est désormais de 71,4 \%
+				\item 29,1 \% des dirigeants universitaires rapportent que leur faculté reconnaît la « valeur et la légitimité de l'éducation en ligne ». Parmi les écoles avec les inscriptions les plus lointaines, 60,1 \% rapportent la reconnaissance par la faculté tandis que seules 11,6 \% des écoles avec des inscriptions locales le font.
+			\end{itemize}
+			\framebreak
+			Selon la \citet{sofad2015a} en 2014 : 
+			\begin {itemize}
+				\item Le total des inscriptions à des cours à distance (formations générale et professionnelle) a augmenté de 3,6 \% et atteint un nouveau sommet à 56 608
+				\item Le nombre d’élèves concernés par ces cours a augmenté quant à lui de 3 \% pour atteindre un nouveau sommet à 29 386 pour une population, selon \citet{is2015a}, de 8 263 600 (soit 0,36 \%)
+				\item La croissance est particulièrement forte en formation professionnelle à distance avec des augmentations de 8 \% pour le nombre d’inscriptions et de 10 \% pour le nombre d’élèves, pour atteindre de nouveaux sommets dans un cas comme dans l’autre (10 209 et 3 374)
+			\end{itemize}
+		\end{frame}
+		
+			
+	\subsection{Avantages et résultats} 
+		\begin{frame}
+			\frametitle{}
+			\begin{columns}[t]
+				\column{.5\textwidth}
+					\begin{block}{Avantages \citep{Lamontagne2013}}
+						\begin {itemize}
+							\item Gestion facilitée
+							\item Économie
+							\item Standardisation
+							\item Personnalisation
+							\item Contrôle
+							\item Rapidité
+							\item Flexibilité
+							\item Qualité
+			\end{itemize}
+					\end{block}
+				\column{.5\textwidth}
+					\begin{block}{Résultats}
+					\citet {Stansbury2013C} et \citet{Lamontagne2013}, déclare en citant Scoot Smith, directeur TI à la Mooresville Graded School District (N.C), que :
+						\begin {itemize}
+							\item Les résultats aux tests d'état finaux connaissent des augmentations significatives (+20 \% sur 6 ans)
+							\item Un taux de poursuite aux études supérieures de + 40 \%.
+							\item Une augmentation de 16 \% dans la réussite globale
+						\end{itemize}
+			Selon \citet{Lamontagne2013}, ces améliorations sont dues à la systématisation des suivis et de l'attention accordée à chacun.
+			
+	
+					\end{block}
+		\end{columns}
+			
+		\end{frame}
+	
+	
+	
+	\section{Enjeux}
+			
+			\begin{frame}[allowframebreaks]
+				  \frametitle{Enjeux}
+				
+				 
+				 \begin{description}[Second Item]
+					\item [Aisance TIC] \par Préparer le personnel enseignant, administratif ainsi que les élèves /étudiants)\citep{NorthCarolina2013}
+					\item[Pédagogiques] Les enjeux pédagogiques sont multiples : 
+					 	\begin{itemize}
+					 		\item Facilite l'identification de ces objectifs, leur mise en relation et leur partage entre concepteurs          
+							\item Soutient la diffusion aux étudiants et clarifient ainsi les attentes de l'évaluation
+							\item Rend beaucoup plus simple la réalisation d'activités d'évaluation visant la démonstration de compétences diversifiées, comme la créativité ou la collaboration
+							\item Vise des compétences de haut niveau (pas que la simple mémorisation)
+							\item Favorise une évaluation plus formative et plus formatrice
+							\item Facilite l'administration des tests diagnostiques et l'utilisation à plusieurs fins.					
+							\item Facilite et accélèrent la transmission de la rétroaction
+							\item Selon \citet{whitelock2006a}, cité par \citet{audet2011a}, cette rapidité de rétroaction est déterminante dans le développement de l'évaluation en ligne, car elle permet :
+					 		\begin {itemize}
+									\item L'automatisation
+									\item La remise immédiate à l'apprenant
+									\item La réutilisation
+							\end{itemize}
+							\item Rend l'évaluation plus captivante parce qu'elle permet d'y insérer des éléments multimédias ou des hyperliens.
+						\item Permet la réalisation d'activité d'évaluation :
+								\begin {itemize}
+									\item Plus variées
+									\item Plus authentiques
+									\item Plus collaboratives
+								\end{itemize}
+						\item Presque que toutes les formes de démonstrations de compétences (exemple : les wikis)
+						\item Il est facile de combiner des évaluations alternatives avec des tests formatifs ou sommatifs automatisés (diversité versus tâche de l'enseignant)						
+						\item Selon \citet{audet2011a} : elle «[...] vient alors supporter la compilation et l'analyse des divers résultats obtenus »
+						\item Facilite particulièrement les formes alternatives d'évaluation en permettant :
+					 	
+					 	\begin {itemize}
+									\item L'anonymat
+									\item La pondération complexe
+									\item La compilation des résultats
+									\item La discussion
+									\item La négociation
+									\item La conservation des traces
+						\end{itemize}
+						\item Utilise des critères détaillés facilités par la compilation efficace de résultats
+						\item Élimine des contraintes liées à la diffusion des documents (diffusion des critères préalables et des résultats liés)
+						\item  L'évaluation en ligne est souvent restreinte aux évaluations à portée faible\footnote{Habituellement formative et ses résultats demeurent locaux} et moyenne\footnote{Peuvent avoir des résultats locaux ou nationaux, mais ceux-ci ne sont pas déterminants dans la vie de la personne évaluée}.
+						\item De plus en plus d'organisations l'envisagent dans des contextes de certification professionnelle, où l'impact d'un succès ou d'un échec est très important.	
+						\end{itemize}								
+					\item[Les enjeux technologiques] Selon la \citet{NorthCarolina2013}, citée par \citet{Lamontagne2013} il faut :
+						\begin {itemize}
+							\item Déternir un réseau développé.Selon \citet{Stansbury2013B}, une couverture complète du WiFi est nécessaire.			\item Diposer d'une large bande passante
+							\item Posséder des équipements informatiques performants
+						\end{itemize} 
+					
+					\item[Les enjeux économiques] Selon la \citet{NorthCarolina2013} :
+					\begin {itemize}
+						\item Réductions de coût au niveau national et local
+						\item Temps réponse plus rapide pour les enseignants et les élèves / étudiants
+					\end{itemize}
+					\item[Les enjeux sociaux] Selon le \citet{NorthCarolina2013}, il y a une amélioration de l'accessibilité par l'usage d'accommodements pour l'élève ou l'étudiant (ex.: audio, vidéo, couleur arrière-plan alternative,etc.) 
+				\end{description}
+				
+			\end{frame}
+			
+	\section{Pratiques} 
+			
+		\subsubsection{Tendances en évaluation en ligne} 
+				\begin{frame}[allowframebreaks]
+					\frametitle{Tendances en évaluation en ligne}				 	
+				 	\begin {itemize}
+						\item Utilisation d’un logiciel de contrôle à distance et d’un poste d’examen dédié disponible à distance
+						\item Utilisation d'un environnement numérique d'apprentissage pour l’assignation des horaires d’examen			
+						\item L’utilisation d’un questionnaire sur un environnement numérique d'apprentissage
+						\item Utilisation Webcam et micro
+						\item 2011-2012, en Caroline du Nord, 19 \% des examens EOC  (\textit{End-of-course}) sont administrés en ligne\citep{NorthCarolina2013}
+						\item Plusieurs instances gouvernementales publient des guides de bonnes pratiques
+						\item Aux États-Unis, 17 états sont membre du \textit{Smarter Balanced Assesment Consortium} qui a créé un système d'évaluation en ligne qui est arrimé au \textit{Common Core State Strandards} (CCSS). Ces 17 états ont des dispositisf centralisés d'évaluation en ligne pour les examens EOC.
+						\item Au Royaumes-Unis, on rédige \textit{British Standards Institution code of practice for the use of information technology (IT) in the Delivery if assessments}\footnote{BS 7988:2002}. Ce code est devenu un standard international\footnote{ISO/IEC 23988:2007}
+						\item Une grande place est accordée au portfolio numérique, car il permet à l'apprenant de démontrer ses connaissances et ses compétences tout en ayant une réflexion sur leur travail tout en étant créatif.
+						\item Une certification créditée pour le personnel impliqué dans la prestation de service d'évaluation en ligne existe.
+					\end{itemize}
+\end{frame}
+		
+				
+			
+
+\section{Bibliographie}
+\subsection{Bibliographie}
+\frame[allowframebreaks]{\frametitle{Bibliographie}
+
+\bibliographystyle{apalike}
+\bibliography{bibliographie} %bibtex file name without .bib extension
+}
+\end{document}
+
